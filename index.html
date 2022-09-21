@@ -2,20 +2,43 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+ 
     <title>Portfolio</title>
     <link rel="stylesheet" href="stylesheet.css">
   </head>
+
+
   <body>
-    <header>
-        <p>WORKS</p>
-        <p>ABOUT</p>
-        <p>SKILL</p>
-        <p>CONTACT</p>
-    </header>
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+        <div class="collapse navbar-collapse justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#work">WORKS</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#about">ABOUT</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#skill">SKILL</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#contact">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-    <h1 class="title">Portfolio</h1>
+    
 
-    <h2>WORKS</h2>
+    <h1 class="text-center" id="top"><br><br>Portfolio</h1>
+
+    
+
+    <h2 class="text-center" id="work"><br><br>WORKS</h2>
     <div class="works-list">
         <div class="works-header">
             <p>社内アプリ</p>
@@ -26,64 +49,85 @@
         </div>    
     </div>
 
-    <h2>ABOUT</h2>
+
+    <h2 id="about" class="text-center"><br><br>ABOUT</h2>
     <p>自己紹介</p>
 
-    <h2>SKILL</h2>
+    
+
+    <h2 id="skill" class="text-center"><br><br>SKILL</h2>
     <div class="skill">
         <h2>習得言語</h2>
-        <table border="1">
-            <tr>
-                <th>言語</th><th>学習期間</th>
-            </tr>
-            <tr>
-               <td>Java</td><td>2か月</td> 
-            </tr>
-            <tr>
-                <td>Ruby</td><td>6か月</td>
-            </tr> 
+        <table class="table mx-auto" style="width: 50%">
+            <thead class="thead-dark">
+                <tr>
+                    <th style="width: 25%"><div class="text-center">言語</div></th>
+                    <th style="width: 25%"><div class="text-center">学習期間</div></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td><div class="text-center">Java</div></td><td><div class="text-center">2か月</div></td></tr>
+                <tr><td><div class="text-center">Ruby</div></td><td><div class="text-center">6か月</div></td></tr>
+            </tbody> 
         </table>
+
         <h2>フレームワーク</h2>
-        <table border="1">
-            <tr>
-                <th>種類</th><th>学習期間</th>
-            </tr>
-            <tr>
-               <td>Servlet</td><td>1か月</td> 
-            </tr>
-            <tr>
-                <td>Ruby on Rails</td><td>6か月</td>
-            </tr> 
+        <table class="table mx-auto" style="width: 50%">
+            <thead class="thead-dark">
+                <tr>
+                    <th style="width: 25%"><div class="text-center">種類</div></th>
+                    <th style="width: 25%"><div class="text-center">言語</div></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td><div class="text-center">Servlet</div></td><td><div class="text-center">1か月</div></td> </tr>
+                <tr><td><div class="text-center">Ruby on Rails</div></td><td><div class="text-center">6か月</div></td></tr>     
+            </tbody>
         </table>
+
         <h2>開発ツール</h2>
-        <table border="1">
-            <tr>
-                <th>ツール</th><th>使用期間</th>
-            </tr>
-            <tr>
-               <td>Eclipse</td><td>2か月</td> 
-            </tr>
-            <tr>
-                <td>VSCode</td><td>6か月</td>
-            </tr> 
+        <table class="table mx-auto" style="width: 50%">
+            <thead class="thead-dark">
+                <tr>
+                    <th style="width: 25%"><div class="text-center">ツール</div></th>
+                    <th style="width: 25%"><div class="text-center">使用期間</div></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td><div class="text-center">Eclipse</div></td><td><div class="text-center">2か月</div></td> </tr>
+                <tr><td><div class="text-center">VSCode</div></td><td><div class="text-center">6か月</div></td></tr>     
+            </tbody>
         </table>
+
         <h2>保有資格</h2>
-        <table border="1">
-            <tr>
-                <th>資格</th>
-            </tr>
-            <tr>
-               <td>普通自動車免許</td>
-            </tr>
-            <tr>
-                <td>臨床検査技師免許</td>
-            </tr> 
+        <table class="table mx-auto" style="width: 50%">
+            <thead class="thead-dark">
+                <tr><th><div class="text-center">資格</div></th></tr>
+            </thead>
+            <tbody>
+                <tr><td><div class="text-center">普通自動車免許</div></td></tr>
+                <tr><td><div class="text-center">臨床検査技師免許</div></td></tr>     
+            </tbody>
         </table>
     </div>
 
-    <h2>CONTACT</h2>
+    <h2 id="contact" class="text-center"><br><br>CONTACT</h2>
     <p>お問い合わせはこちらまで</p>
 
-    
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="collapse navbar-collapse justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#top">TOPに戻る</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
 </html>
