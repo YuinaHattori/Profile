@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
- 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
  
@@ -14,7 +13,7 @@
 
   <body>
     <!--ヘッダー--> 
-    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+    <nav class="navbar navbar-expand fixed-top navbar-dark bg-dark">
         <div class="collapse navbar-collapse justify-content-center">
             <ul class="navbar-nav">
                 <li class="nav-item active">
@@ -34,8 +33,9 @@
     </nav>
 
     <!--ヘッダー終わり～タイトル--> 
-
-    <h1 class="text-center" id="top"><br><br>Portfolio<br><br></h1>
+    <div class="container-title" id="top">
+        <h1 class="title" >Portfolio</h1>
+    </div>
     
     <!--タイトル終わり～作品--> 
 
@@ -43,15 +43,19 @@
     <div class="container my-box">    
         <div class="card-deck">
             <div class="card">
-                <img class="card-img-top" src="sample.jpg" alt="Card image cap">
+                <img class="card-img-top" src="img/sample.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">社内アプリ</h5>
                     <p class="card-text">ログインをしてToDoリストの使用や1対1でのメッセージ送信、選んだ人に向けてTopicの掲載等行えます</p>
                     <p class="card-text"><small class="text-muted">Ruby on Rails</small></p>
+                    <div class="text-center">
+                        <a class="btn btn-outline-info" href="https://github.com/YuinaHattori/Profile" role="button">GitHubを開く</a>
+                        <a class="btn btn-outline-info" href="#" role="button">アプリを開く</a>
+                    </div>
                 </div>
             </div>
             <div class="card">
-                <img class="card-img-top" src="sample2.jpg" alt="Card image cap">
+                <img class="card-img-top" src="img/sample2.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -59,7 +63,7 @@
                 </div>
             </div>
             <div class="card">
-                <img class="card-img-top" src="sample3.jpg" alt="Card image cap">
+                <img class="card-img-top" src="img/sample3.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -72,7 +76,17 @@
     <!--作品終わり～自己紹介-->
 
     <h2 id="about" class="text-center"><br><br>ABOUT<br><br></h2>
-    <p>自己紹介</p>
+    <div class="container countainer-mdiv.container-m">
+        <div class="row">
+          <div class="col-md-4  img-hidden">
+            <img src="img/profile.jpg" alt="img" class="img-fulied">
+          </div>
+          <div class="col-md-8">
+            <p class="h3">自己紹介</p>
+            <p>はじめまして。</p>
+          </div>
+        </div>
+      </div>
 
     <!--自己紹介終わり～スキル紹介-->
 
@@ -148,7 +162,7 @@
     </table>
 
     <h2 id="contact" class="text-center"><br><br>CONTACT<br><br></h2>
-    <p>お問い合わせはこちらまで</p>
+    <p class="text-center">お問い合わせはこちらまで<br><br></p>
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="collapse navbar-collapse justify-content-center">
